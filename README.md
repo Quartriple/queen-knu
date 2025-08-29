@@ -49,8 +49,6 @@ Our approach leverages modern deep learning techniques to address the complex li
 * **모델 개발**: 가사 음역에 가장 적합한 **트랜스포머(Transformer) 기반의 Seq2Seq 모델**을 채택하고 구현합니다.
 * **'노래 가능한 발음' 학습**: 모델 입력에 각 라인의 **음절 수 정보를 `<SYL>` 토큰 형태로 추가**하여, 노래의 운율을 고려한 발음 표기 생성을 유도합니다.
 
----
-
 #### **Phase 3: 성능 평가 및 모델 최적화 (The Evaluation & Optimization Phase)**
 이 단계의 목표는 개발된 모델의 성능을 객관적, 주관적으로 평가하고, 실제 사용성을 높이기 위한 지속적인 개선 프로세스를 수립하는 것입니다.
 
