@@ -35,7 +35,7 @@ Our approach leverages modern deep learning techniques to address the complex li
 
 ### 🇰🇷 프로젝트 로드맵 (Roadmap)
 
-### **1단계: 기반 다지기 및 기술 탐색 (Feasibility Study)**
+#### Phase 1: 기반 다지기 및 기술 탐색 (Feasibility Study)
 
 * **목표**: 일본어 가사의 언어학적 난제를 구체적으로 이해하고, 기존 G2P 기술의 한계를 파악합니다.
 * **실행 과제**:
@@ -43,7 +43,7 @@ Our approach leverages modern deep learning techniques to address the complex li
     * **데이터 샘플링**: 프로젝트의 핵심인 '원문 가사 - 한국어 발음' 병렬 데이터를 소규모(예: 10~20곡)로 수작업으로 구축합니다. 이 과정에서 '노래 가능한 발음'의 정의 기준을 마련합니다.
     * **프로토타입 개발**: Mecab과 같은 기존 일본어 처리 라이브러리를 활용하여, 한자를 히라가나로 변환한 후 한국어 발음으로 치환하는 **규칙 기반 모델**을 개발합니다. 이를 통해 MVP의 실현 가능성을 검증합니다.
 
-### **2단계: 데이터셋 구축 및 모델 MVP 개발 (Data & Model Foundation)**
+#### Phase 2: 데이터셋 구축 및 모델 MVP 개발 (Data & Model Foundation)
 
 * **목표**: 딥러닝 모델 학습에 필요한 양질의 '일본어 가사-한국어 발음' 병렬 데이터셋을 구축하고, 트랜스포머 기반의 Seq2Seq 모델을 훈련합니다.
 * **실행 과제**:
@@ -51,7 +51,7 @@ Our approach leverages modern deep learning techniques to address the complex li
     * **데이터 정제 및 음역**: 수집된 가사를 수작업 또는 반자동화된 방식으로 한국어 발음으로 음역합니다. 가사의 비정형적 특성(비어휘적 소리, 불규칙 구조 등)을 처리하고, 각 라인의 음절 수를 `<SYL>` 토큰 형태로 추가합니다.
     * **모델 구현**: Hugging Face `transformers` 라이브러리를 활용하여 일본어 음절(또는 단어) 시퀀스를 한국어 음절 시퀀스로 변환하는 트랜스포머 기반의 Seq2Seq 모델을 개발합니다.
 
-### **3단계: 모델 고도화 및 성능 평가 (Refinement & Evaluation)**
+#### Phase 3: 모델 고도화 및 성능 평가 (Refinement & Evaluation)
 
 * **목표**: 모델의 예측 정확도를 높이고, '노래 가능한 발음'이라는 핵심 요구사항을 충족시키기 위한 평가 체계를 수립합니다.
 * **실행 과제**:
@@ -59,7 +59,7 @@ Our approach leverages modern deep learning techniques to address the complex li
     * **데이터 보강**: 모델이 자주 틀리는 한자 발음이나 불규칙 발음 단어들을 식별하고, 해당 데이터셋을 보강하여 모델을 재훈련합니다.
     * **평가 파이프라인 구축**: **단어 오류율(WER)** 및 **음소 오류율(PER)**을 자동으로 측정하는 스크립트를 작성합니다. 또한, '노래 가능성'을 평가하기 위한 인간 평가(Human Evaluation) 기준을 명확히 수립하고, 평가를 위한 간단한 인터페이스를 구축합니다.
 
-### **4단계: 데모 개발 및 최종 지식 공유 (Demo & Knowledge Sharing)**
+#### Phase 4: 데모 개발 및 최종 지식 공유 (Demo & Knowledge Sharing)
 
 * **목표**: 최종 모델을 활용한 사용자 경험(UX) 중심의 데모를 개발하고, 프로젝트의 모든 지식을 집대성하여 외부에 공유합니다.
 * **실행 과제**:
