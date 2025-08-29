@@ -51,5 +51,5 @@ Our approach leverages modern deep learning techniques to address the complex li
 8.  Grapheme-to-Phoneme Conversion (G2P) - Deepgram, 8월 28, 2025에 액세스, https://deepgram.com/ai-glossary/grapheme-to-phoneme-conversion-g2p
 9.  [Paper Review] DATA DRIVEN GRAPHEME-TO-PHONEME REPRESENTATIONS FOR A LEXICON-FREETEXT-TO-SPEECH - Scrutinizer, 8월 28, 2025에 액세스, https://welcome-be.tistory.com/43
 
-### 🇰🇷 라이선스 (License)
+### License
 * **MIT**
