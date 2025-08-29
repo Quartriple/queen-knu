@@ -52,4 +52,4 @@ Our approach leverages modern deep learning techniques to address the complex li
 9.  [Paper Review] DATA DRIVEN GRAPHEME-TO-PHONEME REPRESENTATIONS FOR A LEXICON-FREETEXT-TO-SPEECH - Scrutinizer, 8월 28, 2025에 액세스, https://welcome-be.tistory.com/43
 
 ### 🇰🇷 라이선스 (License)
-* *MIT*
+* **MIT**
