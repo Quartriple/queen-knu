@@ -25,7 +25,7 @@ Our approach leverages modern deep learning techniques to address the complex li
 * **Data Strategy**: The project's success is highly dependent on building a high-quality, parallel dataset of Japanese lyrics and their corresponding Korean phonetic transcriptions. This will involve extensive manual transcription and alignment by a skilled expert to handle unique lyric characteristics such as non-lexical sounds and irregular structures.
 * **Feature Engineering**: To ensure 'singable' output, we will include syllable count information as a special **`<SYL>` token** in the model's input. This helps the model learn to produce outputs with a syllable count similar to the original lyrics, a method proven effective in similar projects.
 
-#### 🇰🇷 파일 구조 (File System Structure)
+### 🇰🇷 파일 구조 (File System Structure)
 
   * `data/`: 원본 가사와 최종 병렬 데이터셋을 포함한 모든 데이터 파일을 저장합니다.
   * `src/`: 데이터 전처리, 모델 훈련 및 추론을 위한 모든 소스 코드를 담습니다.
